@@ -1,0 +1,26 @@
+{
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "main": "index.js",
+
+  "//": "Due to @google/generative-ai is deprecated, we will change it to @google/genai", 
+  "dependencies": {
+    "@google/genai": "^1.27.0",
+    "axios": "^1.13.1",
+    "firebase-admin": "^13.5.0",
+    "firebase-functions": "^6.6.0",
+    "node-cache": "^5.1.2"
+  },
+  
+  "private": true
+}
