@@ -47,7 +47,6 @@ exports.webhook = onRequest(async (req, res) => {
           // 4.6. Set a cache chat history
           break;
         }
-
         if (event.message.type === "image") {
           /* 3. Generate text from text-and-image input (multimodal) */
           // 3.1. Get an image binary
