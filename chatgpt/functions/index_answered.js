@@ -29,6 +29,7 @@ exports.webhook = onRequest(async (req, res) => {
                 payload = {
                     type: "text",
                     text: response,
+                    
                 }
             }
             await utils.reply(event.replyToken, payload);
