@@ -1,6 +1,6 @@
 const axios = require("axios");
 const LINE_MESSAGING_API = "https://api.line.me/v2/bot";
-const LINE_HEADER = {
+const LINE_HEADER ={
     "Content-Type": "application/json",
     Authorization: `Bearer ${process.env.CHANNEL_ACCESS_TOKEN}` 
 };
